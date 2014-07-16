@@ -1,0 +1,85 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus { outline: 0; }
+body { background: #fff; line-height: 1; }
+ol, ul { list-style: none; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { font-weight: normal; text-align: left; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: 0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; }
+del { color: #333; }
+ins { background: #fff9c0; text-decoration: none; }
+hr { background-color: #ccc; border: 0; height: 1px; margin: 24px; margin-bottom: 1.714285714rem; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+small { font-size: smaller; }
+img { border: 0; }
+a{ color:#333;}
+.clear {clear: both;}
+/* Start */
+body{ background:#999; font-size:16px; font-family: 'Rokkitt', serif; color:#333;}
+.login-form{
+	width: 300px;
+	margin: 10% auto;
+	padding: 20px;
+	color: #fff;
+	background : #ddd;
+}
+.register-form{
+	width: 500px;
+	margin: 10% auto;
+	padding: 20px;
+	color: #fff;
+	background : #ddd;
+}
+.login-form h1, .register-form h1{ margin-bottom:20px; font-size:24px; font-weight:700; color:#333; font-family: 'Rokkitt', serif;}
+.login-form input, .register-form input{padding:10px; border:0; width:92%; margin-bottom:20px; font-family: 'Rokkitt', serif; font-size:16px;}
+.register-form .btn, .login-form .btn{
+	background: #333;
+	text-decoration: none;
+	width: 80px;
+	display: inline-block;
+	color: #FFF;
+	padding:0!important;
+	line-height:30px!important;
+	cursor:pointer;
+	transition:all 0.5s;
+	position:relative;
+}
+.login-form .btn:hover, .register-form .btn:hover{box-shadow:inset 0 -4px #333; background:#444;}
+.login-form .btn:active, .register-form .btn:active{top:1px;}
+.register-form p.label{color:#555; margin-bottom:10px;}
+p.notif{ margin-bottom:20px; color:#900;}
+p.tanya{ color:#555;}
+
+.admin{ background:#fff;}
+.admincontainer{overflow:hidden;}
+.adminmenu{ width:180px; float:left; background:#16A085; position:relative; float:left; z-index:9; padding-bottom: 40000px; margin-bottom: -40000px;}
+.adminmenu ul li.brow{ background:#1ABC9C; line-height:36px; text-align:center; margin-bottom:2px;}
+.adminmenu ul li a{ padding:10px; display:block; text-decoration:none;}
+.adminmenu ul li a:hover{ background:#2C3E50; color:#fff;}
+.admincontent{ float:right; padding-bottom: 40000px; margin-bottom: -40000px;}
+.haloadmin{ background:#1ABC9C; padding:10px; color:#fff; border-bottom:solid 2px #16A085; box-shadow: 0 4px 15px #bdc3c7; position:relative; z-index:1;}
+.haloadmin .left{ float:left;}
+.haloadmin .left span{ font-weight:700; color:#333;}
+.haloadmin .right{ float:right;}
+.haloadmin .right a.logout{ background:#333; color:#fff; padding:5px 10px; text-decoration:none; transition:all 0.5s; position:relative;}
+.haloadmin .right a.logout:hover{box-shadow:inset 0 -4px #333; background:#444;}
+.haloadmin .right a.logout:active{top:1px;}
+.isine{ margin:20px;}
