@@ -17,72 +17,36 @@ if ($username == ''){header('location: login.php');}
 <div class="adminmenu">
 <ul>
 	<li class="brow">Browsky Panel</li>
-    <li><a href="#">Dasbor</a></li>
-    <li><a href="#">Statistik</a></li>
-    <li><a href="#">Pembelian</a></li>
-    <li><a href="#">Penjualan</a></li>
-    <li><a href="#">Laba</a></li>
-    <li><a href="#">Rugi</a></li>
-    <li><a href="#">Pajak</a></li>
-    <li><a href="#">Pengaturan</a></li>
-    <li><a href="#">Tentang</a></li>
+    <li><a href="index.php">Dasbor</a></li>
+    <li><a href="?page=statistik">Statistik</a></li>
+    <li><a href="?page=pembelian">Pembelian</a></li>
+    <li><a href="?page=penjualan">Penjualan</a></li>
+    <li><a href="?page=laba">Laba</a></li>
+    <li><a href="?page=rugi">Rugi</a></li>
+    <li><a href="?page=pajak">Pajak</a></li>
+    <li><a href="?page=pengaturan">Pengaturan</a></li>
+    <li><a href="?page=tentang">Tentang</a></li>
 </ul>
 </div>
 <div class="admincontent">
 	<div class="haloadmin">
       <div class="left">Halo browsky <span><?php echo $username; ?></span>! Ini adalah halaman admin area.</div>
-      <div class="right"><a class="logout" href='logout.php'>Logout</a></div>
+      <div class="right"><a class="logout" href='user.php?user=logout'>Logout</a></div>
       <div class="clear"></div>
     </div>
     <div class="isine">
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
-        <p>Halo browsky</p>
+        <?php 
+		if(!$_GET["page"]){ echo "Badala";}
+		else if ($_GET["page"]=="statistik") { echo "Statistik"; }
+		else if ($_GET["page"]=="pembelian") { echo "Pembelian"; }
+		else if ($_GET["page"]=="penjualan") { echo "Penjualan"; }
+		else if ($_GET["page"]=="laba") { echo "Laba laba"; }
+		else if ($_GET["page"]=="rugi") { echo "Rugi"; }
+		else if ($_GET["page"]=="pajak") { echo "Pajak"; }
+		else if ($_GET["page"]=="pengaturan") { echo "Pengaturan general"; }
+		else if ($_GET["page"]=="tentang") { echo "Tentang kami"; }
+		else { echo "Hello, world."; }
+		?>
     </div>
 </div>
 </div>
